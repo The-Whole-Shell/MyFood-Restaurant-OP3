@@ -1,0 +1,27 @@
+@mixin flexcolumn {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+@mixin flexrow {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+
+}
+
+@mixin box-shadow ($spray, $adress:0em, $shadowcolor:darken(#FFFFFF,20%)){
+    box-shadow: ($shadowcolor) 0em ($adress) ($spray);
+}
